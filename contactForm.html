@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!--The following lines are comments
+	Author: 			Luke Sweeney
+	Date Created:		13/04/2020
+	Page Description:	Race Website Contact page-->
+	
+<html lang="en">	<!--Declare the primary language for each Web page-->
+<head>
+	<meta charset="utf-8"/> <!--8-bit character encoding capable of encoding all possible characters-->
+	<meta name="description" content="Race Webiste">
+	<meta name="keywords" content="cars, bookings, Contact Us">
+	<meta name="author" content="Luke Sweeney">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+   <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+	<title>Contact Us</title>
+</head>
+<body> <!-- Body Tag Start of Body section display on screen -->
+	<header>      
+        <img class="logo" src="images/logo.jpg" alt="Logo">
+        <h1>Contact Us</h1>     
+	</header>
+	<main><!-- Main wrapper tag that goes around your main content-->
+        <nav>
+             <ul>
+               <li id="active"><a href="home.html">Home</a></li>
+               <li> <a href="formula1.html">Open-wheel Racing</a></li>
+               <li> <a href="nascar.html">Stockcar Racing</a></li>
+               <li> <a href="contactForm.html">Contact Us</a></li>
+            </ul>
+             
+        </nav>
+        <section id="content">
+            <section class="contactForm">
+                <h2>Contact Form</h2>
+                <section>
+                    <h3>Please fill out the following:</h3>
+                    <form action="http://year1.ccpdev.me/FormTest.php" method="get">
+                        <label for="first_name">First Name:<span class="required"> * </span></label>
+                        <input type="text" name="first_name" id="first_name" autofocus required><br>
+                        <label for="last_name">Last Name:<span class="required"> * </span></label>
+                        <input type="text" name="last_name" id="last_name" required><br>
+                        <label for="email">Email:<span class="required"> * </span></label>
+                        <input type="email" name="email" id="email" required placeholder="johnsmith@example.com"><br>
+                        
+                        <label for="gender">Gender:</label>
+                        <input type="radio" id="gender" value="male">Male
+                        <input type="radio" id="gender" value="female">Female
+                        <input type="radio" id="gender" value="other" checked>Other<br>
+                        
+                        <label for="internet">Reason for Contact:</label>
+                        <fieldset>
+                            <input type="checkbox" id="booking" value="booking" checked> Booking <br>
+                            <input type="checkbox" class="marginl" id="hear" name="website"> Website Issue <br>
+                            <input type="checkbox" class="marginl" id="hear" name="Add" value="Add"> Others <br>
+                        </fieldset>
+                        <br>
+                        <label for="message">Query  :   </label>
+                        <textarea cols="60" rows="8" id="message" name="message" placeholder="Your message must be less than 500 characters" data-maxlength="500"></textarea>
+                        <input type="submit" name="submit" id="button" value="Submit">
+                        <input type="reset" name="reset" id="reset">
+                    </form>
+                </section>
+            </section>
+        </section>         
+        <aside>
+            <h2>Links</h2>
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li> <a href="formula1.html">Open-wheel Racing</a></li>
+               <li> <a href="nascar.html">Stockcar Racing</a></li>
+               <li> <a href="contactForm.html">Contact Us</a></li>
+            </ul>
+        </aside>
+	</main>
+	<footer>  <!-- Footer grouping of content for the bottom of the screen and will neeed css to place at the bottom -->
+                <section class="backgroundImage">
+        <a href="#top">Go to Top of Page</a>
+		<ul>
+            <li> <a href="home.html">Home</a></li>
+            <li> <a href="formula1.html">Open-wheel Racing</a></li>
+            <li> <a href="nascar.html">Stockcar Racing</a></li>
+            <li> <a href="contactForm.html">Contact Us</a></li>
+        </ul>
+        <small>&copy;2020 Class Exercise</small>
+        </section>
+	</footer>    
+</body>
+</html>
